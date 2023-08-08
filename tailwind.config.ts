@@ -12,7 +12,12 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+          intro: 'url("/images/ted-bg.jpg") no-repeat cover',
       },
+      colors: {
+        primary: "#FF0000",
+        secondary: "#333333",
+      }
     },
   },
   plugins: [],
