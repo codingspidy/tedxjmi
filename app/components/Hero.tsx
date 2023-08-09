@@ -28,7 +28,7 @@ const Hero: NextComponentType = () => {
             const degreeX = (e.clientY - centerPoint.y) * 0.010
             const degreeY = (e.clientX - centerPoint.x) * -0.010
 
-            ticketMob!.style.transform = `perspective(1000px) rotateX(${degreeX}deg) rotateY(${degreeY}deg)`
+        ticketMob!.style.transform = `perspective(1000px) rotateX(${degreeX}deg) rotateY(${degreeY}deg)`
         })
 
     })
@@ -77,8 +77,8 @@ const Hero: NextComponentType = () => {
                     </div>
                 </div>
             </div>
-            <div id="ticketMobile" className="ticket-mobile ticket-anim rounded-[15px] relative z-10 bg-white p-1 flex md:hidden w-[90%] max-w-[320px] min-h-[460px] max-h-[650px]">
-                <div className="relative ticket-content rounded-[14px] bg-black w-full min-h-[500px] max-h-[600px]">
+            <div id="ticketMobile" className="ticket-mobile ticket-anim rounded-[15px] relative z-10 bg-white p-1 flex md:hidden w-[90%] max-w-[320px] h-full min-h-[440px] max-h-[510px]">
+                <div className="relative ticket-content rounded-[14px] bg-black w-full h-full min-h-[440px] max-h-[510px]">
                     <div className="flex flex-col justify-between h-full">
                         <div className="flex flex-col justify-between h-full px-5 py-9">
                             <div className="flex items-center gap-x-3">
