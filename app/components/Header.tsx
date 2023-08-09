@@ -34,7 +34,7 @@ const Header: NextComponentType = () => {
                                 <span className="text-[#FF2B06] leading-none font-[700] lg:text-[16px] md:text-[13px] text-[11px]">
                                     x
                                 </span>
-                                <span className="text-white ml-1 leading-none font-[700] lg:text-[30px] md:text-[24px] text-[20px]">
+                                <span className="text-white ml-[2px] leading-none font-[700] lg:text-[30px] md:text-[24px] text-[20px]">
                                     JMI
                                 </span>
                             </div>
@@ -51,147 +51,29 @@ const Header: NextComponentType = () => {
                                             Home
                                         </Link>
                                     </li>
-                                    <li className="px-2 py-2 group relative">
-                                        Book/Rent
-                                        <div
-                                            className={
-                                                `hidden hover:block group-hover:block bg-white absolute top-[36px] left-2 text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1`
-                                            }
-                                            style={{ minWidth: "12rem" }}
-                                        >
-                                            <a
-                                                href="#pablo"
-                                                className={
-                                                    "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
-                                                }
-                                                onClick={(e) => e.preventDefault()}
-                                            >
-                                                Personal Commute
-                                            </a>
-                                            <a
-                                                href="#pablo"
-                                                className={
-                                                    "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
-                                                }
-                                                onClick={(e) => e.preventDefault()}
-                                            >
-                                                Delivery (Rentals)
-                                            </a>
-                                            <a
-                                                href="#pablo"
-                                                className={
-                                                    "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
-                                                }
-                                                onClick={(e) => e.preventDefault()}
-                                            >
-                                                Fleeting
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li className="px-2 py-2 relative group">
-                                        <Link href="/about">
+                                    <li className="px-2 py-2">
+                                        <Link href="/">
                                             About
                                         </Link>
-                                        <div
-                                            className={
-                                                `hidden hover:block group-hover:block bg-white absolute top-[36px] left-2 text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1`
-                                            }
-                                            style={{ minWidth: "12rem" }}
-                                        >
-                                            <a
-                                                href="#pablo"
-                                                className={
-                                                    "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
-                                                }
-                                                onClick={(e) => e.preventDefault()}
-                                            >
-                                                Our Values
-                                            </a>
-                                            <a
-                                                href="#pablo"
-                                                className={
-                                                    "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
-                                                }
-                                                onClick={(e) => e.preventDefault()}
-                                            >
-                                                Our Solution
-                                            </a>
-                                            <a
-                                                href="#pablo"
-                                                className={
-                                                    "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
-                                                }
-                                                onClick={(e) => e.preventDefault()}
-                                            >
-                                                Media
-                                            </a>
-                                            <a
-                                                href="#pablo"
-                                                className={
-                                                    "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
-                                                }
-                                                onClick={(e) => e.preventDefault()}
-                                            >
-                                                Gallery
-                                            </a>
-                                        </div>
                                     </li>
-                                    <li className="px-2 py-2 relative group">
-                                        Explore
-                                        <div
-                                            className={
-                                                `hidden hover:block group-hover:block bg-white absolute top-[36px] left-2 text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1`
-                                            }
-                                            style={{ minWidth: "12rem" }}
-                                        >
-                                            <a
-                                                href="#pablo"
-                                                className={
-                                                    "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
-                                                }
-                                                onClick={(e) => e.preventDefault()}
-                                            >
-                                                Blog
-                                            </a>
-                                            <a
-                                                href="#pablo"
-                                                className={
-                                                    "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
-                                                }
-                                                onClick={(e) => e.preventDefault()}
-                                            >
-                                                Skill Development
-                                            </a>
-                                            <a
-                                                href="#pablo"
-                                                className={
-                                                    "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
-                                                }
-                                                onClick={(e) => e.preventDefault()}
-                                            >
-                                                Flagship 3-wheeler
-                                            </a>
-                                            <a
-                                                className={
-                                                    "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
-                                                }
-                                                onClick={(e) => e.preventDefault()}
-                                            >
-                                                Careers
-                                            </a>
-                                            <a
-                                                className={
-                                                    "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
-                                                }
-                                                onClick={(e) => e.preventDefault()}
-                                            >
-                                                Initiatives
-                                            </a>
-                                        </div>
+                                    <li className="px-2 py-2">
+                                        <Link href="/">
+                                            Our team
+                                        </Link>
+                                    </li>
+                                    <li className="px-2 py-2">
+                                        <Link href="/">
+                                            Alumni
+                                        </Link>
                                     </li>
                                     <li className="px-2 py-2 cursor-pointer">
                                         <Link href="/contact">
                                             Contact
+                                        </Link>
+                                    </li>
+                                    <li className="px-2 py-2 cursor-pointer">
+                                        <Link href="/contact">
+                                            Register
                                         </Link>
                                     </li>
                                 </ul>
@@ -221,59 +103,36 @@ const Header: NextComponentType = () => {
                 </a>
 
                 <ul className="min-h-[80%] flex flex-col justify-center items-center gap-y-5 text-[19px] text-white">
-                    <li className="px-2 py-1">
-                        <Link href="/">
-                            Home
-                        </Link>
-                    </li>
-                    <li className="px-2 py-1 relative">
-                        Book/Rent
-                        <div
-                            className={
-                                `hidden hover:block bg-white absolute top-16 left-0 text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1`
-                            }
-                            style={{ minWidth: "12rem" }}
-                        >
-                            <a
-                                href="#pablo"
-                                className={
-                                    "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
-                                }
-                                onClick={(e) => e.preventDefault()}
-                            >
-                                Action
-                            </a>
-                            <a
-                                href="#pablo"
-                                className={
-                                    "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
-                                }
-                                onClick={(e) => e.preventDefault()}
-                            >
-                                Another action
-                            </a>
-                            <a
-                                href="#pablo"
-                                className={
-                                    "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
-                                }
-                                onClick={(e) => e.preventDefault()}
-                            >
-                                Something else here
-                            </a>
-                        </div>
-                    </li>
-                    <li className="px-2 py-1">
-                        <Link href="/about">
-                            About
-                        </Link>
-                    </li>
-                    <li className="px-2 py-1">Explore</li>
-                    <li className="px-2 py-1 cursor-pointer">
-                        <Link href="/contact">
-                            Contact
-                        </Link>
-                    </li>
+                <li className="px-2 py-2">
+                                        <Link href="/">
+                                            Home
+                                        </Link>
+                                    </li>
+                                    <li className="px-2 py-2">
+                                        <Link href="/">
+                                            About
+                                        </Link>
+                                    </li>
+                                    <li className="px-2 py-2">
+                                        <Link href="/">
+                                            Our team
+                                        </Link>
+                                    </li>
+                                    <li className="px-2 py-2">
+                                        <Link href="/">
+                                            Alumni
+                                        </Link>
+                                    </li>
+                                    <li className="px-2 py-2 cursor-pointer">
+                                        <Link href="/contact">
+                                            Contact
+                                        </Link>
+                                    </li>
+                                    <li className="px-2 py-2 cursor-pointer">
+                                        <Link href="/contact">
+                                            Register
+                                        </Link>
+                                    </li>
                 </ul>
             </div>
         </>
