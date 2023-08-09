@@ -108,7 +108,7 @@ footer {
 }
 
 .glitch {
-  color: #ff2b06;
+  color: #ffffff;
   // font-size:100px;
   position: relative;
   // width:400px;
@@ -128,7 +128,7 @@ footer {
   left: 2px;
   text-shadow: -1px 0 red;
   top: 0;
-  color: white;
+  color: #ff0000;
   background: transparent;
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
@@ -239,7 +239,7 @@ footer {
 .ticket {
   width: 650px;
   height: 320px;
-  margin: 100px auto;
+  margin: 0 auto;
   position: relative;
   transition: all 300ms cubic-bezier(0.03, 0.98, 0.53, 0.99) 0s;
   background: white;
@@ -332,4 +332,34 @@ footer {
   padding-bottom: 35px;
   width: calc(320px - 10px);
   border-bottom: 2px dashed #333;
+}
+
+.ticket-mobile:before,
+.ticket-mobile:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  z-index: 2;
+  background-color: var(--background);
+}
+
+.ticket-mobile:before {
+  border: 4px solid white;
+  top: -32px;
+  left: 50%;
+  transform: translate(-50%, 0%) rotate(90deg);
+  // transform: rotateX(90deg);
+  clip-path: circle(65% at 100% 50%);
+}
+
+.ticket-mobile:after {
+  border: 4px solid white;
+  bottom: -32px;
+  left: 50%;
+  transform: translate(-50%, 0%) rotate(90deg) ;
+  // transform: rotateX(90deg);
+  clip-path: circle(65% at 0 50%);
 }

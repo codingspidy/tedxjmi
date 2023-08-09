@@ -8,8 +8,9 @@ config.autoAddCss = false
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, faVolumeHigh, faVolumeMute, faXmark, faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
 import TedxLogo from "../images/tedxjmi-logo.png"
-import ticketProfile from "../images/ticket-profile.png"
+import ticketProfile from "../images/ticket-profile-5.jpg"
 import introBg from "../images/ted-bg.jpg"
+import Counter from "./Counter"
 
 const Hero: NextComponentType = () => {
     useEffect(() => {
@@ -24,16 +25,20 @@ const Hero: NextComponentType = () => {
         })
     })
     return (
-        <section className="relative h-screen bg-black text-white flex items-center justify-center">
-            <Image src={introBg} alt="" className='absolute z-[1] inset-0' />
+        <section className="relative h-screen bg-black text-white flex flex-col items-center justify-center">
+            <div className='absolute z-[1] inset-0 w-full h-screen' >
+                <Image src={introBg} alt="" className="object-cover w-full h-screen" />
+            </div>
             <div className="absolute z-[2] inset-0 bg-black/75" />
 
-            <div className="relative z-10 ticket" id="ticket">
+            <div className="relative z-10 ticket hidden md:flex" id="ticket">
                 <div className="left"></div>
                 <div className="right"></div>
                 <div className="ticket-content-wrapper flex flex-col justify-between px-9 py-7">
                     <div className="flex items-center gap-x-3">
-                        <Image src={ticketProfile} alt="" className="rounded-full w-20 h-20" />
+                        <div className="h-20 w-20 overflow-hidden rounded-full">
+                        <Image src={ticketProfile} alt="" className="object-cover object-top rounded-full w-[300px] h-[300px]" />
+                        </div>
                         <div>
                             <h4 className="text-[20px] font-[500]">Arshad Jamal</h4>
                             <p className="text-sm text-[#8E939B]">Diploma in Comp Engg, JMI</p>
@@ -55,7 +60,7 @@ const Hero: NextComponentType = () => {
                             {/* <p className='text-[#646464] text-[15px]'>Hosted by JMI Students</p> */}
                         </div>
                         <div className=''>
-                            <p className="text-[20px] font-[500] uppercase">November 10th, 2023</p>
+                            <p className="text-[20px] font-[500] uppercase">Nov 10, 2023</p>
                             <p className='text-[#646464] text-[15px]'>MA Ansari Auditorium, JMI</p>
                         </div>
                     </div>
@@ -64,7 +69,47 @@ const Hero: NextComponentType = () => {
                     </div>
                 </div>
             </div>
-            
+            <div className="ticket-mobile rounded-[15px] relative z-10 bg-white p-1 flex md:hidden w-[90%] max-w-[320px] min-h-[460px] max-h-[650px]">
+                <div className="relative ticket-content rounded-[14px] bg-black w-full min-h-[500px] max-h-[600px]">
+                    <div className="flex flex-col justify-between h-full">
+                        <div className="flex flex-col justify-between h-full px-5 py-9">
+                            <div className="flex items-center gap-x-3">
+                            <div className="h-16 w-16 overflow-hidden rounded-full">
+                        <Image src={ticketProfile} alt="" className="object-cover object-top rounded-full w-[250px] h-[250px]" />
+                        </div>                                <div>
+                                    <h4 className="text-[20px] font-[500]">Arshad Jamal</h4>
+                                    <p className="text-sm text-[#64666D]">Diploma in Comp Engg, JMI</p>
+                                </div>
+                            </div>
+                            <div className="flex flex-col items-start gap-4">
+                                <div>
+                                    <div className="flex items-start">
+                                        <h2 className="text-[#FF2B06] leading-none font-[700] lg:text-[48px] md:text-[36px] text-[48px]">
+                                            TED
+                                        </h2>
+                                        <h2 className="text-[#FF2B06] leading-none font-[700] lg:text-[30px] md:text-[24px] text-[24px]">
+                                            x
+                                        </h2>
+                                        <h2 className="w-fit leading-none font-[700] lg:text-[48px] md:text-[36px] text-[48px] glitch" data-text="JMI">
+                                            JMI
+                                        </h2>
+                                    </div>
+                                    {/* <p className='text-[#0f0a0a] text-[15px]'>Hosted by JMI Students</p> */}
+                                </div>
+                                <div className=''>
+                                    <p className="text-[22px] font-[500] uppercase">Nov 10, 2023</p>
+                                    <p className='text-[#64666D] text-[18px]'>MA Ansari Auditorium, JMI</p>
+                                </div>
+                            </div>
+                            <p className='text-[#64666D] text-[15px]'>Hosted by JMI Students</p>
+                        </div>
+                        <div className="border-t-[2px] border-dashed border-t-[#333333] pt-4 pb-9 px-5">
+                            <div className="font-bold text-[30px] text-center">№ 014747</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <Counter />
         </section>
     )
 }
