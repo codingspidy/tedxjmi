@@ -33,7 +33,7 @@ const Hero: NextComponentType = () => {
 
     })
     return (
-        <section className="relative h-screen bg-black text-white flex flex-col items-center justify-center py-20">
+        <section className="relative h-screen bg-black pt-[76.5px] md:pt-[82.5px] text-white flex flex-col items-center justify-center">
             <div className='absolute z-[1] inset-0 w-full h-screen' >
                 <Image src={introBg} alt="" className="object-cover w-full h-screen" />
             </div>
@@ -42,7 +42,7 @@ const Hero: NextComponentType = () => {
             <div className="relative z-10 ticket ticket-anim hidden md:flex" id="ticket">
                 <div className="left"></div>
                 <div className="right"></div>
-                <div className="ticket-content-wrapper flex flex-col justify-between px-9 py-7">
+                <div className="ticket-content-wrapper flex flex-col justify-between px-12 py-10">
                     <div className="flex items-center gap-x-3">
                         <div className="h-20 w-20 overflow-hidden rounded-full">
                             <Image src={ticketProfile} alt="" className="object-cover rounded-full w-20 h-20" />
@@ -69,7 +69,7 @@ const Hero: NextComponentType = () => {
                         </div>
                         <div className=''>
                             <p className="text-[20px] font-[500] uppercase">Nov 10, 2023</p>
-                            <p className='text-[#646464] text-[15px]'>MA Ansari Auditorium, JMI</p>
+                            <p className='text-[#8E939B] text-[15px]'>MA Ansari Auditorium, JMI</p>
                         </div>
                     </div>
                     <div className="ticket-visual_ticket-number-wrapper">
@@ -86,7 +86,7 @@ const Hero: NextComponentType = () => {
                                     <Image src={ticketProfile} alt="" className="object-cover rounded-full w-16 h-16" />
                                 </div>                                <div>
                                     <h4 className="text-[20px] font-[500]">Arshad Jamal</h4>
-                                    <p className="text-sm text-[#64666D]">Diploma in Comp Engg, JMI</p>
+                                    <p className="text-sm text-[#8E939B]">Diploma in Comp Engg, JMI</p>
                                 </div>
                             </div>
                             <div className="flex flex-col items-start gap-4">
@@ -106,10 +106,10 @@ const Hero: NextComponentType = () => {
                                 </div>
                                 <div className=''>
                                     <p className="text-[22px] font-[500] uppercase">Nov 10, 2023</p>
-                                    <p className='text-[#64666D] text-[18px]'>MA Ansari Auditorium, JMI</p>
+                                    <p className='text-[#8E939B] text-[18px]'>MA Ansari Auditorium, JMI</p>
                                 </div>
                             </div>
-                            <p className='text-[#64666D] text-[15px]'>Hosted by JMI Students</p>
+                            <p className='text-[#8E939B] text-[15px]'>Hosted by JMI Students</p>
                         </div>
                         <div className="border-t-[2px] border-dashed border-t-[#333333] pt-4 pb-9 px-5">
                             <div className="font-bold text-[28px] text-center">№ 044797</div>
@@ -117,7 +117,7 @@ const Hero: NextComponentType = () => {
                     </div>
                 </div>
             </div>
-            <Counter />
+            {/* <Counter /> */}
         </section>
     )
 }
